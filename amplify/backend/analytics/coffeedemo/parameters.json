@@ -1,0 +1,21 @@
+{
+    "appName": "coffeedemo",
+    "roleName": "pinpointLambdaRolec3b50b5d",
+    "cloudformationPolicyName": "cloudformationPolicyc3b50b5d",
+    "cloudWatchPolicyName": "cloudWatchPolicyc3b50b5d",
+    "pinpointPolicyName": "pinpointPolicyc3b50b5d",
+    "authPolicyName": "pinpoint_amplify_c3b50b5d",
+    "unauthPolicyName": "pinpoint_amplify_c3b50b5d",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
